@@ -13,10 +13,8 @@ attr_reader :name
   end 
   
   def add_student(student_name, grade)
-    @student_name = student_name
-    @grade = grade.to_i 
-     @roster[@grade] = []
-     @grade << @student_name
+     @roster[grade] = []
+     @roster[grade] << @student_name
 
   end
   
