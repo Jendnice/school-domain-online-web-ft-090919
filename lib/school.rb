@@ -13,7 +13,7 @@ attr_reader :name
   end 
   
   def add_student(student_name, grade)
-    if @roster[grade].include?(grade) then 
+    if @roster.include?(grade) 
        @roster[grade] << student_name
     else  
      @roster[grade] = []
