@@ -33,7 +33,6 @@ attr_reader :name
      sorted_roster = {}
      @roster.each do |grade|
        grade.sort 
-     sorted_roster[grade] = []
      sorted_roster[grade] << grade.sort
       end 
     sorted_roster
