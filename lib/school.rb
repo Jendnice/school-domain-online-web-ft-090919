@@ -29,7 +29,7 @@ attr_reader :name
    end 
   
    def sort 
-     @roster[@grade].sort.to_s
+     @roster[@grade[@student_name.sort]]
    end 
      
 end
