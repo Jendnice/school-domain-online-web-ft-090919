@@ -31,10 +31,10 @@ attr_reader :name
   
    def sort 
      sorted_roster = {}
-     @roster.each |@grade, student_name_array|
-       do student_name_array.sort 
-     sorted_roster[@grade] = []
-     sorted_roster[@grade] << student_name_array
+     @roster.each |grade|
+       do gradestudent_name_array.sort 
+     sorted_roster[grade] = []
+     sorted_roster[grade] << student_name_array
       end 
     sorted_roster
    end 
