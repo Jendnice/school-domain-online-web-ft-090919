@@ -31,8 +31,9 @@ attr_reader :name
   
    def sort 
      sorted_roster = {}
-     @roster[grade].each do |grade|
+     @roster[@grade].each do |grade|
        grade.sort 
+     sorted_roster[grade] = []
      sorted_roster[grade] << grade.sort
       end 
     sorted_roster
