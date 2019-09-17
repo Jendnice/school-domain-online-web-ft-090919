@@ -29,7 +29,7 @@ attr_reader :name
    end 
   
    def sort 
-     @roster.sort
+     puts @roster.sort
    end 
      
 end
