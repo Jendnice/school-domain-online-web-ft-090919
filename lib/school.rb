@@ -20,23 +20,10 @@ attr_reader :name
      @roster[grade] = []
      @roster[grade] << student_name
    end 
-   
+ end
    def grade(grade)
      @grade = grade 
      @roster[@grade]
    end 
-
-  end
-  
- # def add_student
- #   @student_name = student_name
-  #  @grade = grade 
- # end 
-    
-
-# ROSTER << grade_levels = [array of student names]
-  
-#  def add_student(name, grade)
-    
   
 end
