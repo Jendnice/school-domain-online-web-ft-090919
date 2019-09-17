@@ -32,7 +32,8 @@ attr_reader :name
    def sort 
      sorted_roster = {}
      @roster.each do |level, array|
-       sorted_roster[level] = array.sort
+       sorted_roster[level] = []
+       sorted_roster[level] << array.sort
       end 
     sorted_roster
    end 
