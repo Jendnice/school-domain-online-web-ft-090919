@@ -5,7 +5,7 @@ attr_reader :name
   
   def initialize(name)
     @name = name
-    ROSTER = {}
+    roster = {}
   end 
 
 # ROSTER << grade_levels = [array of student names]
