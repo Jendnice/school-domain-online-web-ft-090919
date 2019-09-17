@@ -15,7 +15,7 @@ attr_reader :name
   def add_student(student_name, grade)
  #   @student_name = student_name
   #  @grade = grade
-    roster << {:grade => [student_name]}
+    @roster << {:grade => [student_name]}
   end
   
  # def add_student
