@@ -30,7 +30,13 @@ attr_reader :name
    end 
   
    def sort 
-     puts @roster[@grade]
+     sorted_roster = {}
+     @roster.each |grade, student_name_array|
+       do student_name_array.sort 
+     sorted_roster[grade] = []
+     sorted_roster[grade] << student_name_array
+      end 
+    sorted_roster
    end 
      
 end
