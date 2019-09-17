@@ -1,6 +1,7 @@
 class School 
 
 attr_reader :name 
+
   
   def initialize(name)
     @name = name
@@ -19,11 +20,16 @@ attr_reader :name
     else  
      @roster[grade] = []
      @roster[grade] << student_name
-   end 
- end
+    end 
+  end
+   
    def grade(grade)
      @grade = grade 
      @roster[@grade]
    end 
   
+   def sort 
+     @roster[@grade.sort]
+   end 
+     
 end
