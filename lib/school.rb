@@ -16,7 +16,7 @@ attr_reader :name
     @student_name = student_name
     @grade = grade
      @roster[@grade.to_i] = []
-     @grade << @student_name
+     @grade.to_i << @student_name
 
   end
   
